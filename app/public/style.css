@@ -1,0 +1,38 @@
+body {
+    background-image: url("doodles.png");
+}
+
+#surveyContainer {
+    background: white;
+    width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.btn {
+    text-align: center;
+    margin: auto;
+}
+
+.modal {
+    display: none; 
+    z-index: 1;
+    width: 50%;
+    margin: 100px;
+    overflow: auto;
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}

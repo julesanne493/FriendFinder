@@ -17,22 +17,29 @@ body {
 
 .modal {
     display: none; 
+    margin: 0 auto;
     z-index: 1;
-    width: 50%;
-    margin: 100px;
+    border: 1px solid #888;
+    padding-top: 100px;
     overflow: auto;
     -webkit-animation-name: fadeIn; 
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 .modal-content {
-    position: fixed;
+    position: relative;
+    margin-top: 10px;
+    margin: 0 auto;
     background-color: white;
-    width: 100%;
+    width: 80%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
